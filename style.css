@@ -10,6 +10,12 @@
     grid-template-rows: auto auto auto;
 }
 
+/**** Navigation ****/
+
+li {
+    display: inline;
+}
+
 /**** Header Section ****/
 
 #header-section {
@@ -45,18 +51,7 @@
 #new-section {
     grid-column: 3;
     grid-row: 1;
-}
-
-.new-heading {
-
-}
-
-.new-subheading {
-
-}
-
-.new-body-text {
-
+    background-color: hsl(240, 100%, 5%);
 }
 
 /**** Article Section ****/
@@ -79,4 +74,57 @@
 .article-3 {
     grid-column: 3;
     grid-row: 3;
+}
+
+/**** Text ****/
+.main-heading {
+    color: black;
+    font-family: Inter;
+    font-weight: 800;
+}
+
+.new-heading {
+    color: hsl(35, 77%, 62%);
+    font-family: Inter;
+    font-weight: 800;
+}
+
+.new-subheading {
+    color: white;
+    font-family: Inter;
+    font-weight: 700;  
+}
+
+.new-subheading:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.article-heading {
+    color: hsl(5, 85%, 63%);
+    font-family: Inter;
+    font-weight: 800;
+}
+
+.article-subheading {
+    color: black;
+    font-family: Inter;
+    font-weight: 700;  
+}
+
+.article-subheading:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.new-body {
+    color: hsl(36, 100%, 99%);
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.body {
+    color: black;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 15px;
 }
