@@ -6,22 +6,26 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> <!--Inter font-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Frontend Mentor | News Homepage</title>
 </head>
 
 <body>
     <main class="container">
-        <nav class="navbar item">
-        <img src="assets/images/logo.svg" class="brand">
-            <ul>
-                <li class="navlink">Home</li>
-                <li class="navlink">New</li>
-                <li class="navlink">Popular</li>
-                <li class="navlink">Trending</li>
-                <li class="navlink">Categories</li>
-            </ul>
-          </nav>
-
+        <nav class="navbar" id="navigation">
+            <img src="assets/images/logo.svg" class="brand">
+                <div class="nav-elements">
+                    <a href="#" class="navlink">Home</a>
+                    <a href="#" class="navlink">New</a>
+                    <a href="#" class="navlink">Popular</a>
+                    <a href="#" class="navlink">Trending</a>
+                    <a href="#" class="navlink">Categories</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+          
         <img src="assets/images/image-web-3-desktop.jpg" class="header-image">
         <h1 class="main-heading">The Bright Future of Web 3.0?</h1>
         <p class="heading-body-text body">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
@@ -61,5 +65,7 @@
             <p class="body">How the pandemic has sparked fresh opportunities.</p>
         </article>
     </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
